@@ -12,24 +12,24 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            ProductTest();
+            //ProductTest();
         }
-        public static void ProductTest()
-        {
-            var productManager = new ProductManager(new EFProductDal());
-            var result = productManager.GetProductDetails();
-            if (result.Success)
-            {
-            foreach (var product in result.Data)
-            {
-                Console.WriteLine(product.ProductName + "/" + product.CategoryName);
-            }
-            }
-            else
-            {
-                Console.WriteLine(result.Message);
-            }
+    //    public static void ProductTest()
+    //    {
+    //        var productManager = new ProductManager(new EFProductDal());
+    //        var result = productManager.GetProductDetails();
+    //        if (result.Success)
+    //        {
+    //        foreach (var product in result.Data)
+    //        {
+    //            Console.WriteLine(product.ProductName + "/" + product.CategoryName);
+    //        }
+    //        }
+    //        else
+    //        {
+    //            Console.WriteLine(result.Message);
+    //        }
             
-        }
+    //    }
     }
 }

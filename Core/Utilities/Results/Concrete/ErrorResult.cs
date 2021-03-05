@@ -11,5 +11,9 @@ namespace Core.Utilities.Results.Concrete
         {
 
         }
+        public ErrorResult():base(false)
+        {
+
+        }
     }
 }

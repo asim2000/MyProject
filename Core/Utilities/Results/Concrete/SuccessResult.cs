@@ -10,5 +10,9 @@ namespace Core.Utilities.Results.Concrete
         {
 
         }
+        public SuccessResult():base(true)
+        {
+
+        }
     }
 }
